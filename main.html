@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Augusto Chacana | Calculadora</title>
+    </head>
+<body>
+    <div class="calculadora">
+        <div class="calculadora-display">
+            <div class="clipboard">
+                <img class="clipboard-img" src="./Assets/copy-paste.svg" 
+                alt="Copiar al portapapeles" onclick="copiar()">
+            </div>
+            <h1 id="calculadora-resultado">0</h1>
+        </div>
+        <div class="calculadora-botones">
+            <button class="borrar-todo" id="borrar-todo">C</button>
+            <button class="operador" value="%">&#37;</button>
+            <button class="operador" value="/">&#247;</button>
+            <button class="operador" value="*">&#215;</button>
+            <button value="7">7</button>
+            <button value="8">8</button>
+            <button value="9">9</button>
+            <button class="operador" value="-">&#8722;</button>
+            <button value="4">4</button>
+            <button value="5">5</button>
+            <button value="6">6</button>
+            <button class="operador" value="+">&#43;</button>
+            <button value="1">1</button>
+            <button value="2">2</button>
+            <button value="3">3</button>
+            <button value="0">0</button>
+            <button class="decimal" value=".">&#46;</button>
+            <button class="borrar" id="borrar">&#9003;</button>
+            <button class="operador igual" value="=">&#61;</button>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body> 
+</html>

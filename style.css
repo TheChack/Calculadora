@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+}
+@media only screen and (max-width: 600px) {
+    .calculadora {
+      width: 90%;
+    }
+}
+::-webkit-scrollbar {
+    height: 5px;
+}
+::-webkit-scrollbar-track {
+    background-color: #47474700;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #555555;
+    padding: 1px;
+    border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #696969;
+}
+body {
+    background: linear-gradient(#392a42, #271c2e);
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.calculadora {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+    background-color: #44454b;
+    border-bottom: 8px solid #282829;
+    box-shadow: 0 10px 10px #00000048;
+    height: fit-content;
+    width: 350px;
+    border-radius: 7px;
+}
+.clipboard-img {
+    display: block;
+    height: 25px;
+    margin-right: 10px;
+    filter: invert(30%);
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+.clipboard-img:hover {
+    filter: invert(40%);
+}
+.clipboard-img:active {
+    filter: invert(20%);
+}
+.calculadora-display {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    background-color: #181818;
+    border-radius: 6px 6px 0 0;
+    height: 80px;
+    user-select: none;
+}
+#calculadora-resultado {
+    text-align: right;
+    color: white;
+    font-family: monospace;
+    font-size: 42px;
+    overflow-x: auto;
+}
+.calculadora-botones {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 9px;
+    padding: 12px;
+    user-select: none;
+}
+button {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    min-height: 50px;
+    font-size: 24px;
+    border-radius: 5px;
+    border: none;
+    color: #1b1b1b;
+    background-color: #d1d1d1;
+    cursor: pointer;
+}
+button:hover {
+    filter: brightness(110%);
+}
+button:active {
+    filter: brightness(80%);
+}
+.operador, .borrar {
+    background-color: #949393;
+}
+.igual {
+    grid-column: -2;
+    grid-row: 4 / span 2;
+    background-color: #db9121;
+}
+.borrar-todo {
+    color: white;
+    background-color: #db5621;
+}
